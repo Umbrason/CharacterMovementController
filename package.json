@@ -13,6 +13,7 @@
         "url": "https://www.github.com/umbrason"
     },
     "dependencies": {
-        "com.umbrason.umbrasonsutils" : "https://github.com/Umbrason/UmbrasonsUtils.git"
+        "com.umbrason.umbrasonsutils" : "1.0.0",
+        "com.unity.inputsystem": "1.6.3"
     }
 }
