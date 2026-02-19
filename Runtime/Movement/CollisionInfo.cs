@@ -25,7 +25,12 @@ public class CollisionInfo : MonoBehaviour
     private float cached_dotThreshold => Mathf.Cos(Mathf.PI * SLOPE_ANGLE_PIs);
     private float DotThreshold => cached_dotThreshold;
 
-
+    void OnDisable() 
+    {
+        activeCollisions.Clear();
+        activeGroundCollisions.Clear();
+    }
+    
     void OnCollisionExit(Collision other)
     {
         activeCollisions.Remove(other.collider);
